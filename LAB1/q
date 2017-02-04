@@ -1,0 +1,2 @@
+qemu-system-x86_64 -fda mtximage -no-fd-bootchk -localtime -serial mon:stdio
+

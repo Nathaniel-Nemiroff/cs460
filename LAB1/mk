@@ -1,0 +1,13 @@
+as86 -o bs.o bs.s
+
+bcc -c -ansi bc1.c
+
+ld86 -d bs.o bc1.o /usr/lib/bcc/libc.a
+
+ls -l a.out
+
+dd if=a.out of=mtximage bs=1024 count=1 conv=notrunc
+
+rm *.o
+echo done
+

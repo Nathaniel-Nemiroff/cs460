@@ -1,0 +1,17 @@
+VFD=mtximage
+
+echo ts.s...
+as86 -o ts.o ts.s
+echo t.c...
+bcc  -c -ansi t.c
+echo linking...
+ld86 -d -o mtx ts.o t.o mtxlib /usr/lib/bcc/libc.a
+
+echo mounting...
+mount -o loop $VFD /mnt
+cp mtx /mnt/boot
+umount /mnt
+
+rm *.o mtx
+echo done
+
