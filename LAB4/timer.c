@@ -68,7 +68,7 @@ int itimer(int time)
       total = curr->time;
       while(curr->next!=0){
 	 total+=curr->next->time;
-	 if(total>=t)
+	 if(total>t)
 	 {
 	    tqe[pid].time = t-(total-curr->next->time);//-curr->next->time);
 	    curr->next->time-=tqe[pid].time;
