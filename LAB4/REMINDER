@@ -1,0 +1,1 @@
+make sure getc and putc are called by a syscall in umode and to put a long delay between getc()s in u1.c to ensure it stays in umode for a while
