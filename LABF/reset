@@ -1,0 +1,9 @@
+cp vdiskpure vdisk
+sudo ./mku init
+sudo ./mku login
+sudo ./mku sh
+sudo ./mku cat
+sudo ./mku more
+sudo ./mku grep
+sudo ./mku cp
+sudo ./mku l2u

@@ -1,0 +1,13 @@
+partition=1 sector=63 offset=32256
+compiling cat.c .....
+cat.c:7.6: error: buf undeclared
+cat.c:7.8: error: illegal indirection
+cat.c:7.13: error: tty undeclared
+cat.c:7.16: error: illegal indirection
+cat.c:19.15: error: illegal indirection
+cat.c:22.13: error: illegal indirection
+cat.c:24.23: error: illegal indirection
+linking .......
+copying cat into vdisk/bin/cat
+'a.out' -> '/mnt/bin/cat'
+done cat

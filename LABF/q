@@ -1,0 +1,5 @@
+qemu-system-x86_64 -drive file='vdisk',format=raw -m 1040M -smp $1 -serial /dev/pts/20 -serial /dev/pts/2 \
+-parallel /dev/pts/21 -localtime #-cdrom MTXinstallCD.iso #-boot d
+
+
+

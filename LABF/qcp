@@ -1,0 +1,5 @@
+qemu-system-x86_64 -hda vdisk -m 520M -smp $1 -serial /dev/pts/21 -serial /dev/pts/22 \
+-parallel /dev/pts/23 -localtime -cdrom MTXinstallCD.iso #-boot d
+
+
+
